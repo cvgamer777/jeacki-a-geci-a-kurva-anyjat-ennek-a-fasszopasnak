@@ -1,5 +1,4 @@
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 
 
@@ -9,6 +8,9 @@ public class Main {
         //1. feladat
 
         ciganyService service = new ciganyService("files/jackie.txt");
+
+        System.out.println("3. feladat " + service.getLinesLenght());
+
         debugger();
     }
 }

@@ -16,7 +16,7 @@ public class ciganyService {
     public int countLines(String filename) throws FileNotFoundException {
         File fbe = new File(filename);
         Scanner scanner = new Scanner(fbe);
-        int result = 0-1;
+        int result = -1;
         while (scanner.hasNextLine()){
             scanner.nextLine();
             result++;
@@ -44,5 +44,8 @@ public class ciganyService {
             }
             i++;
         }
+    }
+    public int getLinesLenght() {
+        return getMatrix().length;
     }
 }
